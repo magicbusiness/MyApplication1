@@ -7,14 +7,25 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity()
 {
-    var btnSample: Button = findViewById(R.id.btnSample)
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnSample.setOnClickListener {
-            Toast.makeText(this, "Sample Button", Toast.LENGTH_SHORT).show()
+        // Variable Initialization
+        val btnSample1 = findViewById<Button>(R.id.btnSample)
+        val btnSample2 = findViewById<Button>(R.id.btnSample2)
+        val btnSample3 = findViewById<Button>(R.id.btnSample3)
+
+        btnSample1.setOnClickListener {
+            Toast.makeText(this, "Sample Button Ripple 1", Toast.LENGTH_SHORT).show()
+        }
+
+        btnSample2.setOnClickListener {
+            Toast.makeText(this, "Sample Button Ripple 2", Toast.LENGTH_SHORT).show()
+        }
+
+        btnSample3.setOnClickListener {
+            Toast.makeText(this, "Sample Button Ripple 3", Toast.LENGTH_SHORT).show()
         }
     }
 }
