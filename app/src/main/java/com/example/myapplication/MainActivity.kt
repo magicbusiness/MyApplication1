@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity()
         val btnSample2 = findViewById<Button>(R.id.btnSample2)
         val btnSample3 = findViewById<Button>(R.id.btnSample3)
 
+        // Button Section
         btnSample1.setOnClickListener {
             Toast.makeText(this, "Sample Button Ripple 1", Toast.LENGTH_SHORT).show()
         }
