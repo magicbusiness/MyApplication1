@@ -11,4 +11,6 @@
         </shape>
     </item>
 
+<!--    android:color="@color/purple_500"  (This Are Ripple color) -->
+
 </ripple>
